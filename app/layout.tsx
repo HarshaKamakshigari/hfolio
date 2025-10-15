@@ -41,7 +41,7 @@ const dmMono = DM_Mono({
 });
 
 export const metadata = {
-  title: "Harshaa | Portfolio",
+  title: "Harshaa'Folio",
   description: "Designer & Security Enthusiast",
 };
 

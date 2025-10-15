@@ -51,7 +51,7 @@
 }
 
 .cmdk-input {
-  @apply w-full h-12 px-4 bg-transparent border-b border-white/10 text-white placeholder-gray-400 focus:outline-none focus:border-red-500;
+  @apply w-full h-12 px-4 bg-transparent border-b border-white/10 text-white placeholder-gray-400 ;
 }
 
 .cmdk-list {
@@ -99,10 +99,10 @@ html {
 }
 
 /* Focus styles for accessibility */
-*:focus-visible {
+/* *:focus-visible {
   outline: 2px solid #ef4444;
   outline-offset: 2px;
-}
+} */
 
 /* Custom scrollbar */
 ::-webkit-scrollbar {

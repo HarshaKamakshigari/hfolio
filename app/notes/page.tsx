@@ -8,35 +8,16 @@ import TopNumber from "../../components/TopNumber";
 
 const notes = [
   {
-    title: "Understanding JWT",
-    description: "A deep dive into JSON Web Tokens and authentication flows.",
-    link: "https://yourblog.com/jwt-guide",
+    title: "Exploring Onion Routing",
+    description: "The Key to Anonymous Internet Communication",
+    link: "https://beyond-the-firewall.hashnode.dev/exploring-onion-routing-the-key-to-anonymous-internet-communication",
   },
   {
-    title: "Next.js Image Optimization",
-    description: "Tips for using Next.js Image component for performance.",
-    link: "https://yourblog.com/next-image-optimization",
+    title: "Build Your Own Shell in C",
+    description: "we’ll explore how shells work and create a simple shell in C that can execute commands just like Bash.",
+    link: "https://medium.com/@harsha.kamakshigari/build-your-own-shell-in-c-748dc9c39436",
   },
-  {
-    title: "CSS Grid Tricks",
-    description: "Advanced CSS Grid patterns for responsive layouts.",
-    link: "https://yourblog.com/css-grid-tricks",
-  },
-  {
-    title: "Building Secure APIs",
-    description: "Best practices for designing secure RESTful APIs.",
-    link: "https://yourblog.com/secure-apis",
-  },
-  {
-    title: "React Performance Tips",
-    description: "Optimizing React applications for better speed.",
-    link: "https://yourblog.com/react-performance",
-  },
-  {
-    title: "TypeScript Best Practices",
-    description: "Essential tips for writing robust TypeScript code.",
-    link: "https://yourblog.com/typescript-best-practices",
-  },
+  
 ];
 
 export default function Notes() {
