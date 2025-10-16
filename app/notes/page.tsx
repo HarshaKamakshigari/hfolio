@@ -66,7 +66,7 @@ export default function Notes() {
                     href={note.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="block p-4 bg-black/30 border border-white/10 rounded-lg hover:bg-black/50 hover:border-red-500 transition-all duration-200"
+                    className="block p-4 bg-black/30 transition-all duration-200"
                   >
                     <h2 className="text-lg font-semibold text-white hover:text-red-400 transition-colors duration-200">
                       {note.title}
