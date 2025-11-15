@@ -576,6 +576,7 @@
 import { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import "./fonts.css";
 import Footer from "../components/Footer";
 import CommandMenu from "../components/CommandMenu";
 import TopNumber from "../components/TopNumber";
@@ -667,10 +668,10 @@ export default function About() {
             <motion.div
               variants={fadeUp}
               transition={{ type: "spring", stiffness: 100, damping: 10 }}
-              className="w-72 h-72 relative grayscale overflow-hidden rounded-2xl border border-white/10"
+              className="w-72 h-72 relative overflow-hidden rounded-2xl border border-white/10"
             >
               <Image
-                src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?auto=format&fit=crop&w=800&q=80"
+                src="/pictures/pp.jpg"
                 alt="Harsha Kamakshigari"
                 fill
                 className="object-cover cursor-pointer hover:grayscale-0 transition-all duration-700 ease-in-out"
