@@ -1,0 +1,9 @@
+@font-face {
+    font-family: "Garamond";
+    src: url("https://db.onlinewebfonts.com/t/2bf40ab72ea4897a3fd9b6e48b233a19.eot");
+    src: url("https://db.onlinewebfonts.com/t/2bf40ab72ea4897a3fd9b6e48b233a19.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/2bf40ab72ea4897a3fd9b6e48b233a19.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/2bf40ab72ea4897a3fd9b6e48b233a19.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/2bf40ab72ea4897a3fd9b6e48b233a19.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/2bf40ab72ea4897a3fd9b6e48b233a19.svg#Garamond")format("svg");
+}
