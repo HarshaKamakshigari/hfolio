@@ -14,7 +14,7 @@ export const projects = [
   },
   {
     index: "(02)",
-    title: "zenzone",
+    title: "Zenzone",
     description:
       "A meditative AI realm designed to harmonize your mind and body. Zen Zone learns your rhythm, curates breathing cycles, ambient soundscapes, and mood-based guidance — helping you find balance between focus and flow. Minimal, mindful, and made for stillness in motion.",
     image:
@@ -24,7 +24,7 @@ export const projects = [
       "/pictures/zenzonef.png",
       "/pictures/zenzonet.png",
     ],
-    slug: "zen-zone",
+    slug: "Zen-zone",
   },
   {
     index: "(03)",
