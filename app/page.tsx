@@ -150,7 +150,6 @@
 //     </>
 //   );
 // }
-
 "use client";
 
 import { useState, useRef } from "react";
@@ -182,8 +181,8 @@ export default function About() {
 
   return (
     <div className="relative min-h-screen flex flex-col text-white font-mono overflow-hidden">
-      
-      {/* NOISE (same as Notes) */}
+
+      {/* ⬛ Noise BG */}
       <div className="fixed inset-0 -z-10 bg-black">
         <Noise
           patternSize={250}
@@ -194,7 +193,7 @@ export default function About() {
         />
       </div>
 
-      {/* CMD BUTTON */}
+      {/* ⌘K Button */}
       <button
         onClick={() => setIsCommandOpen(true)}
         className="fixed top-4 right-4 z-30 text-xs text-gray-500 bg-black/50 hover:bg-black/70 px-3 py-1 rounded-full backdrop-blur-sm border border-white/10 hover:border-white/20 transition-all duration-200 flex items-center gap-1 pointer-events-auto"
@@ -204,43 +203,21 @@ export default function About() {
 
       <CommandMenu open={isCommandOpen} onOpenChange={setIsCommandOpen} />
 
-<<<<<<< ours
-
-      {/* TOP NUMBER */}
-      <div className="fixed top-8 left-1/2 -translate-x-1/2 z-20">
-        <TopNumber />
-||||||| ancestor
-      {/* Crosshair overlay */}
-      <div className="pointer-events-none hidden sm:block fixed inset-0 z-40">
+      {/* 🎯 Crosshair */}
+      {/* <div className="pointer-events-none hidden sm:block fixed inset-0 z-40">
         <Crosshair
           containerRef={containerRef as React.RefObject<HTMLElement>}
           color="#ffffff"
         />
-=======
-      {/* CROSSHAIR */}
-      <div className="pointer-events-none hidden sm:block fixed inset-0 z-40">
-        <Crosshair
-          containerRef={containerRef as React.RefObject<HTMLElement>}
-          color="#ffffff"
-        />
->>>>>>> theirs
-      </div>
+      </div> */}
 
-<<<<<<< ours
-      {/* ⭐ MAIN CONTENT (flex-1 just like Notes page) */}
-      <main
-||||||| ancestor
-      {/* Page content */}
-      <div
-=======
-      {/* TOP NUMBER */}
+      {/* 🔢 Top Number */}
       <div className="fixed top-8 left-1/2 -translate-x-1/2 z-20">
         <TopNumber />
       </div>
 
-      {/* ⭐ MAIN CONTENT (flex-1 just like Notes page) */}
+      {/* ⭐ Main */}
       <main
->>>>>>> theirs
         ref={containerRef}
         className="flex-1 flex flex-col items-center justify-between p-8 pt-48 pb-16 relative z-20"
       >
@@ -250,7 +227,7 @@ export default function About() {
           animate="show"
           className="flex flex-col md:flex-row items-center justify-center gap-10"
         >
-          {/* IMAGE */}
+          {/* Profile Image */}
           <motion.div
             variants={fadeUp}
             transition={{ type: "spring", stiffness: 100, damping: 10 }}
@@ -264,7 +241,7 @@ export default function About() {
             />
           </motion.div>
 
-          {/* TEXT */}
+          {/* Text Block */}
           <motion.div
             variants={fadeUp}
             transition={{ duration: 1, ease: "easeInOut" }}
@@ -288,7 +265,7 @@ export default function About() {
         </motion.div>
       </main>
 
-      {/* ⭐ FOOTER → EXACT SAME STRUCTURE AS NOTES PAGE */}
+      {/* ⬆ Footer sits at bottom like Notes */}
       <div className="relative bottom-0 z-20">
         <Footer />
       </div>
