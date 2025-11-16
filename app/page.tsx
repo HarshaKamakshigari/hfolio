@@ -204,14 +204,35 @@ export default function About() {
 
       <CommandMenu open={isCommandOpen} onOpenChange={setIsCommandOpen} />
 
+<<<<<<< ours
+
+      {/* TOP NUMBER */}
+      <div className="fixed top-8 left-1/2 -translate-x-1/2 z-20">
+        <TopNumber />
+||||||| ancestor
+      {/* Crosshair overlay */}
+      <div className="pointer-events-none hidden sm:block fixed inset-0 z-40">
+        <Crosshair
+          containerRef={containerRef as React.RefObject<HTMLElement>}
+          color="#ffffff"
+        />
+=======
       {/* CROSSHAIR */}
       <div className="pointer-events-none hidden sm:block fixed inset-0 z-40">
         <Crosshair
           containerRef={containerRef as React.RefObject<HTMLElement>}
           color="#ffffff"
         />
+>>>>>>> theirs
       </div>
 
+<<<<<<< ours
+      {/* ⭐ MAIN CONTENT (flex-1 just like Notes page) */}
+      <main
+||||||| ancestor
+      {/* Page content */}
+      <div
+=======
       {/* TOP NUMBER */}
       <div className="fixed top-8 left-1/2 -translate-x-1/2 z-20">
         <TopNumber />
@@ -219,6 +240,7 @@ export default function About() {
 
       {/* ⭐ MAIN CONTENT (flex-1 just like Notes page) */}
       <main
+>>>>>>> theirs
         ref={containerRef}
         className="flex-1 flex flex-col items-center justify-between p-8 pt-48 pb-16 relative z-20"
       >
