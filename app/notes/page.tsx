@@ -201,7 +201,7 @@ export default function Notes() {
       </main>
 
       {/* ✅ Footer */}
-      <div className="bottom-6 z-20 bg-black">
+      <div className="bottom-6 z-20">
         <Footer />
       </div>
     </div>
