@@ -38,19 +38,6 @@
 //         aria-label="Open command menu (Ctrl+K)"
 //       >
 //         <kbd className="text-red-400 font-mono">Ctrl+K</kbd>
-//       </button>
-
-//       <CommandMenu open={isCommandOpen} onOpenChange={setIsCommandOpen} />
-
-//       {/* Crosshair overlay */}
-//       <div className="pointer-events-none hidden sm:block fixed inset-0 z-40">
-//         <Crosshair
-//           containerRef={containerRef as React.RefObject<HTMLElement>}
-//           color="#ffffff"
-//         />
-//       </div>
-
-//       {/* Page content */}
 //       <div
 //         ref={containerRef}
 //         className="relative min-h-screen flex flex-col text-white font-mono overflow-hidden"
@@ -159,7 +146,7 @@ import "./fonts.css";
 import Footer from "../components/Footer";
 import CommandMenu from "../components/CommandMenu";
 import TopNumber from "../components/TopNumber";
-import Crosshair from "../components/Crosshair";
+
 import Noise from "@/components/Noise";
 
 export default function About() {

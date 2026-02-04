@@ -216,8 +216,8 @@ export default function Footer() {
       ctx.beginPath();
 
       const mouthAngle = pacman.mouthOpen ? 0.25 : 0.05;
-      let startAngle = mouthAngle * Math.PI;
-      let endAngle = (2 - mouthAngle) * Math.PI;
+      const startAngle = mouthAngle * Math.PI;
+      const endAngle = (2 - mouthAngle) * Math.PI;
 
       // Rotate based on direction
       const dir = pacman.direction;

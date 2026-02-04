@@ -126,7 +126,7 @@ const notes = [
 
 export default function Notes() {
   const [isCommandOpen, setIsCommandOpen] = useState(false);
-  const [searchTerm, setSearchTerm] = useState("");
+  const [searchTerm] = useState("");
 
   const filteredNotes = notes.filter(
     (note) =>

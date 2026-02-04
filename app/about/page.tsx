@@ -62,18 +62,6 @@
 //       );
 //     });
 //   }, []);
-
-//   return (
-//     <div className="relative min-h-screen text-white font-mono overflow-hidden">
-
-//       {/* Noise */}
-//       <div className="fixed inset-0 -z-10 pointer-events-none opacity-[0.15]">
-//         <Noise patternSize={250} patternAlpha={15} />
-//       </div>
-
-//       {/* Top number */}
-//       <div className="fixed top-8 left-1/2 -translate-x-1/2 z-30">
-//         <TopNumber />
 //       </div>
 
 //       <main className="px-8 md:px-20 max-w-5xl mx-auto pb-48 pt-40 space-y-40 text-center">
@@ -149,7 +137,7 @@
 import { useEffect } from "react";
 import Footer from "@/components/Footer";
 import TopNumber from "@/components/TopNumber";
-import Noise from "@/components/Noise";
+
 
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";

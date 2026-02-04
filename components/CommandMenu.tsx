@@ -139,7 +139,7 @@
 // }
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import { Command } from "cmdk";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
@@ -166,11 +166,12 @@ export default function CommandMenu({ open: controlledOpen, onOpenChange }: Comm
   const router = useRouter();
 
   const isOpen = controlledOpen ?? internalOpen;
-  const setOpen = (open: boolean) => {
+
+  const setOpen = useCallback((open: boolean) => {
     onOpenChange?.(open);
     if (controlledOpen === undefined) setInternalOpen(open);
     if (!open) setSearch("");
-  };
+  }, [controlledOpen, onOpenChange]);
 
   // ⭐ Links with beautiful icons
   const links = [
@@ -205,7 +206,7 @@ export default function CommandMenu({ open: controlledOpen, onOpenChange }: Comm
 
     document.addEventListener("keydown", down);
     return () => document.removeEventListener("keydown", down);
-  }, [isOpen, links, router]);
+  }, [isOpen, links, router, setOpen]);
 
   useEffect(() => {
     if (isOpen) setTimeout(() => inputRef.current?.focus(), 100);

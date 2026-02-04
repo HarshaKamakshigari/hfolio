@@ -27,12 +27,12 @@ const Crosshair: React.FC<CrosshairProps> = ({ color = 'white', containerRef = n
   const filterXRef = useRef<SVGFETurbulenceElement>(null);
   const filterYRef = useRef<SVGFETurbulenceElement>(null);
 
-  let mouse = { x: 0, y: 0 };
+  const mouseRef = useRef({ x: 0, y: 0 });
 
   useEffect(() => {
     const handleMouseMove = (ev: Event) => {
       const mouseEvent = ev as MouseEvent;
-      mouse = getMousePos(mouseEvent, containerRef?.current);
+      mouseRef.current = getMousePos(mouseEvent, containerRef?.current);
       if (containerRef?.current) {
         const bounds = containerRef.current.getBoundingClientRect();
         if (
@@ -60,9 +60,9 @@ const Crosshair: React.FC<CrosshairProps> = ({ color = 'white', containerRef = n
 
     gsap.set([lineHorizontalRef.current, lineVerticalRef.current].filter(Boolean), { opacity: 0 });
 
-    const onMouseMove = (_ev: Event) => {
-      renderedStyles.tx.previous = renderedStyles.tx.current = mouse.x;
-      renderedStyles.ty.previous = renderedStyles.ty.current = mouse.y;
+    const onMouseMove = () => {
+      renderedStyles.tx.previous = renderedStyles.tx.current = mouseRef.current.x;
+      renderedStyles.ty.previous = renderedStyles.ty.current = mouseRef.current.y;
 
       gsap.to([lineHorizontalRef.current, lineVerticalRef.current].filter(Boolean), {
         duration: 0.9,
@@ -116,8 +116,8 @@ const Crosshair: React.FC<CrosshairProps> = ({ color = 'white', containerRef = n
     };
 
     const render = () => {
-      renderedStyles.tx.current = mouse.x;
-      renderedStyles.ty.current = mouse.y;
+      renderedStyles.tx.current = mouseRef.current.x;
+      renderedStyles.ty.current = mouseRef.current.y;
 
       for (const key in renderedStyles) {
         const style = renderedStyles[key];
