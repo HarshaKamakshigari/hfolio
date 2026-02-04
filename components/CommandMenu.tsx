@@ -139,7 +139,7 @@
 // }
 "use client";
 
-import { useState, useEffect, useRef, useCallback } from "react";
+import { useState, useEffect, useRef, useCallback, useMemo } from "react";
 import { Command } from "cmdk";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
@@ -174,13 +174,13 @@ export default function CommandMenu({ open: controlledOpen, onOpenChange }: Comm
   }, [controlledOpen, onOpenChange]);
 
   // ⭐ Links with beautiful icons
-  const links = [
+  const links = useMemo(() => [
     { href: "/", label: "Home", icon: House, key: "h" },
     { href: "/about", label: "About", icon: Fingerprint, key: "a" },
     { href: "/works", label: "Works", icon: FolderKanban, key: "w" },
     { href: "/contact", label: "Contact", icon: Send, key: "c" },
     { href: "/resume.pdf", label: "Resume", icon: FileUser, key: "r" },
-  ];
+  ], []);
 
   useEffect(() => {
     const down = (e: KeyboardEvent) => {
