@@ -461,7 +461,7 @@ export default function Footer() {
             </div>
 
             {/* Touch controls for mobile */}
-            <div className="grid grid-cols-3 gap-1 mt-3 sm:hidden max-w-[150px] mx-auto">
+            <div className="grid grid-cols-3 gap-1 mt-8 mb-10 sm:hidden max-w-[150px] mx-auto">
               <div />
               <button
                 onTouchStart={() => handleTouch("up")}
